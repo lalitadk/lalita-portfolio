@@ -13,7 +13,7 @@ const Projects = () => {
       title: 'Portfolio Website (This one)',
       description: 'Designed and developed a fully responsive personal portfolio website showcasing projects, skills, education, work experience, and certifications. Implemented clean UI with reusable components, custom styling, and smooth navigation. Integrated downloadable resume and external links for projects and certificates.',
       techStack: 'React.js, JSX, CSS, JavaScript, Git, GitHub',
-      link: '#'
+      link: 'https://github.com/lalitadk/lalita-portfolio.git'
     },
     {
       title: 'Resume Builder App',
