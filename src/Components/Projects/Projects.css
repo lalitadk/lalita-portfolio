@@ -59,3 +59,61 @@
   transition: color 0.3s;
 }
 
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .projects-container {
+    gap: 30px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .project-tech {
+    font-size: 13px;
+  }
+
+  .project-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .project-description,
+  .project-tech,
+  .project-link {
+    font-size: 12.5px;
+  }
+
+  .project-link {
+    margin-top: 5px;
+  }
+}
+

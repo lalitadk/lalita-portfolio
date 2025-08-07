@@ -19,18 +19,18 @@ const Navbar = () => {
   }
   return(
     <div id='navbar' className="navbar">
-      <img src={logo} alt=''/>
-      <img src={menu_open} onClick={openMenu} alt='' className='nav-mob-open'/>
+      <img src={logo} alt='logo'/>
+      <img src={menu_open} onClick={openMenu} alt='Open Menu' className='nav-mob-open' style={{ width: "30px", height: "30px" }}/>
       <ul ref={menuRef} className='nav-menu'>
-        <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
-        <li><AnchorLink className='anchor-link' offset={120} href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={60} href='#about'><p onClick={()=>setMenu("About Me")}>About</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#Education'><p onClick={()=>setMenu("Education")}>Education</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#Skills'><p onClick={()=>setMenu("Skills")}>Skills</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#Experience'><p onClick={()=>setMenu("Experience")}>Experience</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#Projects'><p onClick={()=>setMenu("Projects")}>Projects</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#Certification'><p onClick={()=>setMenu("Certification")}>Certifications</p></AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#Contact'><p onClick={()=>setMenu("Contact")}>Contact</p></AnchorLink></li>      
+        <img src={menu_close} onClick={closeMenu} alt="Close Menu" className="nav-mob-close" style={{ width: "30px", height: "30px" }}/>
+        <li><AnchorLink className='anchor-link' offset={120} href='#home'><p onClick={()=>{ setMenu("home"); closeMenu(); }}>Home</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={60} href='#about'><p onClick={()=>{ setMenu("About me"); closeMenu(); }}>About</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#Education'><p onClick={()=>{ setMenu("Education"); closeMenu(); }}>Education</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#Skills'><p onClick={()=>{ setMenu("Skills"); closeMenu(); }}>Skills</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#Experience'><p onClick={()=>{ setMenu("Experience"); closeMenu(); }}>Experience</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#Projects'><p onClick={()=>{ setMenu("Projects"); closeMenu(); }}>Projects</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#Certification'><p onClick={()=>{ setMenu("Certifications"); closeMenu(); }}>Certifications</p></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#Contact'><p onClick={()=>{ setMenu("Contact"); closeMenu(); }}>Contact</p></AnchorLink></li>      
       </ul>
     </div>
     );

@@ -85,24 +85,41 @@
     color: #00f7ff;
 }
 
-@media(max-width:768px){
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
-    }
-    .about-title h1{
-        font-size: 50px;
-        padding: 0;
-    }
-    .about-sections{
-        flex-direction: column;
-    }
-    .about-left{
-        display: none;
-    }
-    .about-para{
-        font-size: 18px;
-        line-height: 32px;
-    }
+@media (max-width: 768px) {
+  .about {
+    gap: 40px;
+    margin: 30px 20px;
+    align-items: center;
+  }
+
+  .about-title h1 {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .about-sections {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .about-left {
+    display: none; /* Hide image on small screens */
+  }
+
+  .about-right {
+    gap: 40px;
+    width: 100%;
+  }
+
+  .about-para {
+    font-size: 16px;
+    line-height: 28px;
+    gap: 20px;
+  }
+
+  .about-para p {
+    padding: 0;
+  }
 }

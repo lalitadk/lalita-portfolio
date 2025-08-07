@@ -15,21 +15,47 @@
   font-size: 14px;
   color: #94a3b8;
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px;
+  }
 
-/* .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  .footer-content {
+    padding: 0 10px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  /* Optional: if you uncomment footer-links in future */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    color: #94a3b8;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    color: #ffffff;
+  }
 }
 
-.footer-links a {
-  color: #00bfff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 12px;
+  }
 
-.footer-links a:hover {
-  color: #a5f700;
-} */
+  .footer-links a {
+    font-size: 13px;
+  }
+}

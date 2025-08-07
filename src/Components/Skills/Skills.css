@@ -70,3 +70,29 @@
   font-weight: bold;
   margin-right: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .skills-title {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .skill-category {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .skill-category h3 {
+    font-size: 20px;
+  }
+
+  .skill-category li {
+    font-size: 15px;
+  }
+}
